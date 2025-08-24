@@ -77,7 +77,7 @@ export const myProjects = [
       },
     ],
     
-    href: "https://github.com/DopaMi9e/KidooScope",
+    href: "https://github.com/DopaMi9e/RabbitHuntAR",
     apkLink: "https://anish-dogra.itch.io/ar-rabit",
   },
   {
@@ -117,7 +117,7 @@ export const myProjects = [
       
     ],
     
-    href: "https://github.com/DopaMi9e/KidooScope",
+    href: "https://github.com/DopaMi9e/2DGame",
     apkLink: "https://anish-dogra.itch.io/jum-rift",
   },
   
