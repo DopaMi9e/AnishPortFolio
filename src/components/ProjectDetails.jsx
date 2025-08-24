@@ -41,7 +41,7 @@ const ProjectDetails = ({
                 muted
                 playsInline
                 preload="metadata"
-                className="rounded-xl object-contain max-h-[300px] max-w-[250px]"
+                className="rounded-xl object-contain max-h-[350px] max-w-[350px]"
               />
             ) : (
               <img
