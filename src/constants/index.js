@@ -13,7 +13,7 @@ export const myProjects = [
       "Commercially sold the app for ₹20,000, validating its technical and educational value.",
     ],
     logo: "",
-    image: "/assets/projects/ProjectImages/project1.jpg",
+    image: "/assets/projects/ProjectImages/apple.png",
     video: "/assets/projects/ProjectVideos/project1.mp4",
     tags: [
       {
@@ -52,7 +52,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/ProjectImages/project2.jpg",
+    image: "/assets/projects/ProjectImages/rabbit.png",
     video: "/assets/projects/ProjectVideos/project2.mp4",
     tags: [
       {
@@ -96,7 +96,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/ProjectImages/project3.jpg",
+    image: "/assets/projects/ProjectImages/penguin.png",
     video: "/assets/projects/ProjectVideos/project3.mp4",
     tags: [
       {

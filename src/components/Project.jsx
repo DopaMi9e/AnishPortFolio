@@ -10,50 +10,61 @@ const Project = ({
   image,
   video,
   tags,
+  preview,
   setPreview,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+
   return (
     <>
       <div
-        className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={(e) => {
-          if (typeof setPreview === 'function' && typeof tags !== 'undefined') {
-            if (typeof id !== 'undefined' ? id === 2 : title.includes('RabitHuntAR')) {
-              setPreview(true);
-              if (typeof setRabbitPos === 'function') {
-                setRabbitPos({ x: e.clientX, y: e.clientY });
-              }
-            } else {
-              setPreview(null);
-            }
-          }
-        }}
-        onMouseMove={(e) => {
-          if (typeof setRabbitPos === 'function' && (typeof id !== 'undefined' ? id === 2 : title.includes('RabitHuntAR'))) {
-            setRabbitPos({ x: e.clientX, y: e.clientY });
-          }
-        }}
+        className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-neutral-700/50 bg-neutral-800/40 px-10 py-10 shadow-md transition hover:shadow-xl hover:bg-neutral-800/70"
+        onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
+        {/* Left Side - Title & Tags */}
         <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
+          <p className="text-2xl font-semibold text-white">{title}</p>
+          <div className="flex flex-wrap gap-2 mt-2">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span
+                key={tag.id}
+                className="px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white"
+              >
+                {tag.name}
+              </span>
             ))}
           </div>
         </div>
-        <button
-          onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
-        >
-          Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
-        </button>
-      </div>
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
 
+        {/* Right Side - Preview + Button */}
+        <div className="flex items-center gap-4">
+          {/* Animated Preview Image */}
+          {preview === image && (
+            <div className="w-[120px] aspect-[3/2] rounded-lg shadow-lg">
+  <img
+    src={image}
+    alt={title}
+    className="w-full h-full object-contain"
+  />
+</div>
+
+          )}
+
+          <button
+            onClick={() => setIsHidden(true)}
+            className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium flex items-center gap-2 hover:from-indigo-500 hover:to-purple-500 transition"
+          >
+            Read More
+            <img src="assets/arrow-right.svg" className="w-4" />
+          </button>
+        </div>
+      </div>
+
+      {/* Divider */}
+      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-600/50 to-transparent mt-4" />
+
+      {/* Modal / Details */}
       {isHidden && (
         <ProjectDetails
           title={title}
@@ -64,12 +75,9 @@ const Project = ({
           tags={tags}
           href={href}
           apkLink={apkLink}
-          closeModal={() => setIsHidden(false)} // you didn’t define closeModal, so I fixed it
+          closeModal={() => setIsHidden(false)}
         />
-      )
-      }
-
-
+      )}
     </>
   );
 };
