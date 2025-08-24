@@ -17,7 +17,23 @@ const Project = ({
     <>
       <div
         className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
+        onMouseEnter={(e) => {
+          if (typeof setPreview === 'function' && typeof tags !== 'undefined') {
+            if (typeof id !== 'undefined' ? id === 2 : title.includes('RabitHuntAR')) {
+              setPreview(true);
+              if (typeof setRabbitPos === 'function') {
+                setRabbitPos({ x: e.clientX, y: e.clientY });
+              }
+            } else {
+              setPreview(null);
+            }
+          }
+        }}
+        onMouseMove={(e) => {
+          if (typeof setRabbitPos === 'function' && (typeof id !== 'undefined' ? id === 2 : title.includes('RabitHuntAR'))) {
+            setRabbitPos({ x: e.clientX, y: e.clientY });
+          }
+        }}
         onMouseLeave={() => setPreview(null)}
       >
         <div>
