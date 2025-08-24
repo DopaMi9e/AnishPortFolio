@@ -28,7 +28,7 @@ const Resume = () => {
     {
       degree: "B.E. Computer Science & Engineering",
       school: "Chitkara University",
-      period: "2020 – 2024"
+      period: "2022 – 2026"
     },
     {
       degree: "Higher Secondary (CBSE)",
