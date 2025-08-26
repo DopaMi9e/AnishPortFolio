@@ -120,6 +120,46 @@ export const myProjects = [
     href: "https://github.com/DopaMi9e/2DGame",
     apkLink: "https://anish-dogra.itch.io/jum-rift",
   },
+   {
+    id: 4,
+    title: "Vr-Shooting Game",
+    description:
+
+      "Developed a VR shooting game in Unity, providing an immersive experience for players.",
+    subDescription: [
+
+      "Implemented intuitive VR controls for an engaging shooting experience.",
+
+      "Designed diverse enemy types and dynamic environments to enhance gameplay variety.",
+
+      "Added UI elements such as score tracking and restart functionality, with immersive visuals and sound effects for an engaging experience.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/ProjectImages/VR GAME.png",
+    video: "/assets/projects/ProjectVideos/project4.mp4",
+    tags: [
+      {
+        id: 1,
+        name: "C#",
+        path: "/assets/logos/csharp.svg",
+      },
+      {
+        id: 2,
+        name: "Unity Engine",
+        path: "/assets/logos/Unity.svg",
+      },
+      {
+        id: 3,
+        name: "Oculus",
+        path: "/assets/logos/Oculus.svg",
+      },
+      
+    ],
+    
+    href: "https://github.com/DopaMi9e/VRshooting",
+    apkLink: "https://anish-dogra.itch.io/",
+  },
   
 ];
 export const mySocials = [
