@@ -160,6 +160,43 @@ export const myProjects = [
     href: "https://github.com/DopaMi9e/VRshooting",
     apkLink: "https://anish-dogra.itch.io/",
   },
+   {
+    id: 5,
+    title: "Togethr",
+    description:
+
+"Developed a 2-player coordination game in Unity, providing a fun and challenging experience for players.",
+subDescription: [
+  "Implemented synchronized 2-player controls to encourage teamwork and collaboration.",
+  "Designed obstacle-based levels requiring timing, precision, and coordination to progress.",
+  "Integrated UI elements such as score tracking, restart functionality, and progress feedback.",
+  "Added smooth animations and dynamic obstacles to enhance engagement and replayability.",
+],
+    href: "",
+    logo: "",
+    image: "/assets/projects/ProjectImages/Togethr.png",
+    video: "/assets/projects/ProjectVideos/project5.mp4",
+    tags: [
+      {
+        id: 1,
+        name: "C#",
+        path: "/assets/logos/csharp.svg",
+      },
+      {
+        id: 2,
+        name: "Unity Engine",
+        path: "/assets/logos/Unity.svg",
+      },
+      {
+        id: 3,
+        name: "PhotoShop",
+        path: "/assets/logos/Adobe Photoshop.svg",
+      },
+    ],
+    
+    href: "https://github.com/DopaMi9e/Togethr",
+    apkLink: "https://anish-dogra.itch.io/togethr",
+  },
   
 ];
 export const mySocials = [
