@@ -73,7 +73,7 @@ const ProjectDetails = ({
                     <img
                       src={tag.path}
                       alt={tag.name}
-                      className={`w-10 h-10 ${tag.name === "AR Foundation" ? "filter invert brightness-0" : ""
+                      className={`w-10 h-10 ${tag.name === "AR Foundation" ||tag.name === "Oculus"   ? "filter invert brightness-0" : ""
                         }`}
                     />
                   </span>
