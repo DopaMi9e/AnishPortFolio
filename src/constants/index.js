@@ -4,8 +4,9 @@ export const myProjects = [
     id: 1,
     title: "KidooScope",
     description:
-      "Developed a Unity-based AR learning app for early learners (ages 3–7) featuring flashcard scanning, 3D models, animations, and voice narration.",
+      "Guided by Prof Karthick B.",
     subDescription: [
+      "Developed a Unity-based AR learning app for early learners (ages 3–7) featuring flashcard scanning, 3D models, animations, and voice narration.",
       "Designed interactive Quiz Mode and Puzzle Mode to make learning engaging through gamification.",
 
       "Implemented multi-category AR content (fruits, vegetables, animals, vehicles, etc.) with intuitive touch interactions.",
@@ -15,6 +16,7 @@ export const myProjects = [
     logo: "",
     image: "/assets/projects/ProjectImages/apple.png",
     video: "/assets/projects/ProjectVideos/project1.mp4",
+    linkedin: "https://www.linkedin.com/in/karthick-b-2b491a15/",
     tags: [
       {
         id: 1,
@@ -165,8 +167,9 @@ export const myProjects = [
     title: "Togethr",
     description:
 
-"Developed a 2-player coordination game in Unity, providing a fun and challenging experience for players.",
+ "Guided by Prof Karthick B.",
 subDescription: [
+  "Developed a 2-player coordination game in Unity, providing a fun and challenging experience for players.",
   "Implemented synchronized 2-player controls to encourage teamwork and collaboration.",
   "Designed obstacle-based levels requiring timing, precision, and coordination to progress.",
   "Integrated UI elements such as score tracking, restart functionality, and progress feedback.",
@@ -176,6 +179,8 @@ subDescription: [
     logo: "",
     image: "/assets/projects/ProjectImages/Togethr.png",
     video: "/assets/projects/ProjectVideos/project5.mp4",
+    
+    linkedin: "https://www.linkedin.com/in/karthick-b-2b491a15/",
     tags: [
       {
         id: 1,
