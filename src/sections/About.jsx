@@ -11,20 +11,33 @@ const About = () => {
       <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
-        <div className="flex items-end grid-default-color grid-1">
-        <img
-          src="assets/coding-pov.png"
-          className="absolute scale-[1.2] left-30 right-0 bottom-30 md:scale-[1.5] lg:scale-[2.3]"
-        />
+        <div className="relative flex items-end grid-default-color grid-1">
+          <img
+            src="assets/linkedin-banner.png"
+            className="absolute right-6 top-5 
+               scale-[1.2] md:scale-[1.3] lg:scale-[1.6] 
+               h-[45%] w-[90%] object-cover object-center 
+               blur-sm hover:blur-0 transition duration-500"
+          />
+
+          <img
+            src="assets/coding-pov.png"
+            className="absolute scale-[1.2] left-[30px] bottom-[30px] 
+               md:scale-[1.5] lg:scale-[2.3]"
+          />
 
           <div className="z-10">
             <p className="headtext">Hi, I'm Anish Dogra</p>
             <p className="subtext">
-            Enthusiastic Unity game developer, passionate about creating immersive and interactive experiences while continuously learning and refining my craft.
+              Enthusiastic Unity game developer, passionate about creating immersive
+              and interactive experiences while continuously learning and refining my
+              craft.
             </p>
           </div>
-          <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
+
+          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-purple-800" />
         </div>
+
         {/* Grid 2 */}
         <div className="grid-default-color grid-2">
           <div
@@ -32,10 +45,10 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <p className="flex items-end text-5xl text-gray-500">
-                WHERE CREATIVITY MEETS GAMEPLAY
+              WHERE CREATIVITY MEETS GAMEPLAY
             </p>
-            
-            
+
+
             <Card
               style={{ rotate: "30deg", top: "10%", left: "10%" }}
               image="assets/logos/Blender.png"
@@ -46,13 +59,13 @@ const About = () => {
               image="assets/logos/Adobe Photoshop.png"
               containerRef={grid2Container}
             />
-          
+
             <Card
               style={{ rotate: "45deg", top: "60%", left: "20%" }}
               image="assets/logos/Unity.png"
               containerRef={grid2Container}
             />
-            
+
             <Card
               style={{ rotate: "-10deg", top: "80%", left: "50%" }}
               image="assets/logos/Unreal Engine.png"
