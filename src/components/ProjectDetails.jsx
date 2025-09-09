@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { FiGithub, FiDownload } from "react-icons/fi"; // react-icons
+import { FiGithub } from "react-icons/fi";
 import { TbExternalLink } from "react-icons/tb";
+import { FaLinkedin } from "react-icons/fa";
 
 const ProjectDetails = ({
   title,
@@ -8,12 +9,12 @@ const ProjectDetails = ({
   subDescription,
   image,
   video,
+  linkedin,
   tags,
   href,
   apkLink,
   closeModal,
 }) => {
-  console.log("Video prop in ProjectDetails:", video);
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
@@ -29,9 +30,9 @@ const ProjectDetails = ({
           ✕
         </button>
 
-        {/* Flex container for video + content */}
+        {/* Flex container */}
         <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden">
-          {/* Video/Image Left */}
+          {/* Video/Image */}
           <div className="w-full md:w-1/2 flex items-center justify-center p-3">
             {video ? (
               <video
@@ -52,12 +53,25 @@ const ProjectDetails = ({
             )}
           </div>
 
-
-          {/* Text/Details Right */}
+          {/* Text/Details */}
           <div className="w-full md:w-1/2 p-6 flex flex-col justify-between">
             <div>
               <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
-              <p className="mb-3 font-normal text-neutral-300">{description}</p>
+              <p className="mb-3 font-normal text-neutral-300">{description}
+                {linkedin && (
+                  <a
+                    href={linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 inline-flex items-center text-blue-400 hover:text-blue-600 align-middle"
+                  >
+                    <FaLinkedin size={16} />
+                  </a>
+
+                )}</p>
+
+
+
               {subDescription.map((subDesc, index) => (
                 <p key={index} className="mb-2 font-normal text-neutral-400">
                   {subDesc}
@@ -73,40 +87,45 @@ const ProjectDetails = ({
                     <img
                       src={tag.path}
                       alt={tag.name}
-                      className={`w-10 h-10 ${tag.name === "AR Foundation" ||tag.name === "Oculus"   ? "filter invert brightness-0" : ""
+                      className={`w-10 h-10 ${tag.name === "AR Foundation" || tag.name === "Oculus"
+                          ? "filter invert brightness-0"
+                          : ""
                         }`}
                     />
                   </span>
                 ))}
-
               </div>
 
               <div className="flex items-center gap-4">
-                {/* Source Code */}
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative group inline-flex items-center cursor-pointer text-white"
-                >
-                  <FiGithub size={22} />
-                  <span className="absolute bottom-full mb-2 hidden rounded bg-black px-2 py-1 text-xs text-white group-hover:block">
-                    Source Code
-                  </span>
-                </a>
+                {/* GitHub */}
+                {href && (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative group inline-flex items-center cursor-pointer text-white"
+                  >
+                    <FiGithub size={22} />
+                    <span className="absolute bottom-full mb-2 hidden rounded bg-black px-2 py-1 text-xs text-white group-hover:block">
+                      Source Code
+                    </span>
+                  </a>
+                )}
 
-                <a
-                  href={apkLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative group inline-flex items-center cursor-pointer text-white"
-                >
-                  <TbExternalLink size={22} />
-                  <span className="absolute bottom-full mb-2 hidden rounded bg-black px-2 py-1 text-xs text-white group-hover:block">
-                    Itch Link
-                  </span>
-                </a>
-
+                {/* External Link */}
+                {apkLink && (
+                  <a
+                    href={apkLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative group inline-flex items-center cursor-pointer text-white"
+                  >
+                    <TbExternalLink size={22} />
+                    <span className="absolute bottom-full mb-2 hidden rounded bg-black px-2 py-1 text-xs text-white group-hover:block">
+                      Itch Link
+                    </span>
+                  </a>
+                )}
               </div>
             </div>
           </div>

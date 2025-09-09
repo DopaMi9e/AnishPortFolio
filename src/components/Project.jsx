@@ -9,6 +9,7 @@ const Project = ({
   apkLink,
   image,
   video,
+  linkedin,
   tags,
   preview,
   setPreview,
@@ -72,6 +73,7 @@ const Project = ({
           subDescription={subDescription}
           image={image}
           video={video}
+          linkedin={linkedin}
           tags={tags}
           href={href}
           apkLink={apkLink}

@@ -43,7 +43,7 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
-            AD
+            <img src= "assets/logos/logo.png" className = "mt-2 mb-2 w-10 filter invert brightness-0" alt="" srcset="" />
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
