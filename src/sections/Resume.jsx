@@ -42,7 +42,7 @@ const Resume = () => {
       <div className="flex items-center justify-between mb-10">
         <h2 className="text-heading">Resume</h2>
         <a
-          href="/assets/resume.pdf"
+          href="/assets/resume-1.pdf"
           download
           className="flex items-center gap-2 px-5 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 rounded-full shadow-md hover:scale-105 transition-transform"
         >
