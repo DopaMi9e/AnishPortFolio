@@ -23,10 +23,10 @@ export function Astronaut(props) {
     }
   }, [actions, animations]);
 
-  const yPosition = useMotionValue(5);
-  const ySpring = useSpring(yPosition, { damping: 30 });
+  const yPosition = useMotionValue(2);
+  const ySpring = useSpring(yPosition, { damping: 10  });
   useEffect(() => {
-    ySpring.set(-1);
+    ySpring.set(1); // Changed from -1 to 1 to move upwards
   }, [ySpring]);
   useFrame(() => {
     group.current.position.y = ySpring.get();
@@ -36,9 +36,9 @@ export function Astronaut(props) {
       ref={group}
       {...props}
       dispose={null}
-      rotation={[-Math.PI / 2, -0.2, 2.2]}
-      scale={props.scale || 0.3}
-      position={props.position || [1.3, -1, 0]}
+      rotation={[0, -Math.PI/9 , 0]} // Changed rotation to face the user
+      scale={props.scale || 0.2}
+      position={props.position || [1.5, 2.5, 0]} // Changed Y position from -1 to 1
     >
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model">
