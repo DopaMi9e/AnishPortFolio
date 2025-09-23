@@ -113,11 +113,11 @@ export function Astronaut(props) {
               <group name="Cube004" />
               <group name="Cube003" />
               <group name="Cube" />
-              <group
+              {/* <group
                 name="Cube009"
                 rotation={[-2.708, 0.013, -1.447]}
                 scale={1.307}
-              />
+              /> */}
               <group name="Cube011" />
             </group>
           </group>

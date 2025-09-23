@@ -7,9 +7,17 @@ import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Suspense } from "react";
 import Loader from "../components/Loader";
+import { FaFolderOpen } from "react-icons/fa";
+
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       id="home"
@@ -32,6 +40,21 @@ const Hero = () => {
             <Rig />
           </Suspense>
         </Canvas>
+        {/* <Button */}
+
+        <div
+          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          style={{ zIndex: 10 }}
+        >
+          <button
+            className="nav-link flex items-center gap-2 px-5 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 rounded-full shadow-md hover:scale-105 transition-transform"
+            onClick={() => handleScroll("work")}
+          >
+            <FaFolderOpen className="text-lg" />
+            View Portfolio
+          </button>
+        </div>
+
       </figure>
     </section>
   );
