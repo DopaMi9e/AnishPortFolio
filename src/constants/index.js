@@ -230,7 +230,7 @@ export const ongoingProjects = [
         path: "/assets/logos/Unity.svg",
       },
       { id: 3,
-        name: "Occulus",
+        name: "Oculus",
         path: "/assets/logos/Oculus.svg",
       },
       
@@ -296,7 +296,7 @@ export const ongoingProjects = [
         path: "/assets/logos/Unity.svg",
       },
       { id: 3,
-        name: "Occulus",
+        name: "Oculus",
         path: "/assets/logos/Oculus.svg",
       },
       
