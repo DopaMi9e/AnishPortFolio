@@ -1,3 +1,4 @@
+import { defs, desc, path } from "motion/react-client";
 import { FaGithub } from "react-icons/fa";
 export const myProjects = [
   {
@@ -202,6 +203,108 @@ subDescription: [
     href: "https://github.com/DopaMi9e/Togethr",
     apkLink: "https://anish-dogra.itch.io/togethr",
   },
+  
+];
+export const ongoingProjects = [
+  { id: 1, 
+    title: "VR Eye Health Application (Cardboard VR Integration)", 
+    description: "Client - Eye Department, Chitkara University",
+
+    subDescription: [
+      "Developing a virtual reality eye testing experience using Google Cardboard VR for vision screening and awareness.",
+      "The application uses interactive VR markers displaying alphabet-based charts and other visual tests to simulate real-world eye examinations.",
+      "Designed to provide an immersive, portable, and low-cost solution for preliminary eye testing and visual training.",
+      "Being considered for patent filing under Chitkara University’s innovation and research initiative.", 
+    ],
+    logo: "",
+    image: "/assets/projects/ProjectImages/onproject-1.svg",
+    tags: [
+      {
+        id: 1,
+        name: "C#",
+        path: "/assets/logos/csharp.svg",
+      },
+      {
+        id: 2,
+        name: "Unity Engine",
+        path: "/assets/logos/Unity.svg",
+      },
+      { id: 3,
+        name: "Occulus",
+        path: "/assets/logos/Oculus.svg",
+      },
+      
+
+    ],
+  },
+
+  { id: 2, 
+    title: "Chatbot Integration in AR Game", 
+    description: "Client - Prof. Neha Garg",
+
+    
+    subDescription: [
+      "Working on an Augmented Reality (AR) mobile game that integrates an AI-driven chatbot to enhance player interaction.",
+      "Project supervised by Prof. Neha Garg, offering a ₹12,000 stipend.",
+      "Responsible for connecting AI responses with AR gameplay flow and ensuring smooth conversational engagement.", 
+    ],
+    logo: "",
+    image: "/assets/projects/ProjectImages/onproject-2.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "C#",
+        path: "/assets/logos/csharp.svg",
+      },
+      {
+        id: 2,
+        name: "Unity Engine",
+        path: "/assets/logos/Unity.svg",
+      },
+      { id: 3,
+        name: "OpenAI",
+        path: "/assets/logos/openai.jpg",
+      },
+      
+
+    ],
+    
+    apkLink: "https://docs.google.com/document/d/1velMl3RGKb-1cFicrQAdQb18MoNIFyea3HqRbd4j1M4/edit?usp=sharing",
+  },
+
+  { id: 3, 
+    title: "VR Barber Simulator Game", 
+    
+
+    description: "Personal Project",
+    subDescription: [
+      "Designing a VR-based simulation game where users experience being a barber in a realistic 3D environment.",
+      "Currently in pre-production stage — developing the Game Concept Document (GDD) detailing mechanics, interactions, and environment layout.",
+      "Future scope includes player interaction via VR controllers, realistic hair-cutting physics, and environment feedback.", 
+    ],
+    logo: "",
+    image: "/assets/projects/ProjectImages/onproject-3.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "C#",
+        path: "/assets/logos/csharp.svg",
+      },
+      {
+        id: 2,
+        name: "Unity Engine",
+        path: "/assets/logos/Unity.svg",
+      },
+      { id: 3,
+        name: "Occulus",
+        path: "/assets/logos/Oculus.svg",
+      },
+      
+
+    ],
+  },
+
+
   
 ];
 export const mySocials = [

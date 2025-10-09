@@ -4,16 +4,17 @@ import ProjectDetails from "./ProjectDetails";
 const Project = ({
   title,
   description,
-  subDescription,
-  href,
-  apkLink,
+  subDescription = [],
+  tags = [],
   image,
   video,
+  href,
   linkedin,
-  tags,
+  apkLink,
   preview,
   setPreview,
 }) => {
+
   const [isHidden, setIsHidden] = useState(false);
 
   return (
