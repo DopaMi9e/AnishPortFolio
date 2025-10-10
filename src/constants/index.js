@@ -245,7 +245,7 @@ export const ongoingProjects = [
     
     subDescription: [
       "Working on an Augmented Reality (AR) mobile game that integrates an AI-driven chatbot to enhance player interaction.",
-      "Project supervised by Prof. Neha Garg, offering a ₹12,000 stipend.",
+      "Supervised by Prof. Neha Garg, with a project grant of ₹12K.",
       "Responsible for connecting AI responses with AR gameplay flow and ensuring smooth conversational engagement.", 
     ],
     logo: "",
